@@ -1,0 +1,103 @@
+/*------------
+---- root ----
+--------------*/
+:root {
+    --charcoal: #36454F;
+    --orange: #FF7B19;
+}
+
+body {
+
+    background: url(/images/background.jpg) no-repeat fixed center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+a {
+    color: var(--charcoal);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+/*------------
+---- Login ----
+--------------*/
+.login {
+    position: absolute;
+    font-size: 25px;   
+    width: 400px;
+    height: 400px;
+    top: 47%;
+    left: 49%;
+    transform: translate(-47%,-15%);
+
+}
+
+.login input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.fa-user-circle {
+    cursor: pointer;
+    position: absolute;
+    top: -28%;
+    left: 38%;
+}
+
+.login input[type="text"], input[type="password"] {
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    height: 30px;
+}
+
+.login input[type="submit"] {
+    cursor: pointer;
+    color: #fff;
+    background: var(--charcoal);
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.login input[type="submit"]:hover {
+    color: #fff;
+    background: var(--orange);
+}
+/*------------
+---- Footer ----
+--------------*/
+.footer {
+    font-size: 18px;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    text-align: center;
+}
+
+/*------------
+---- Media ----
+--------------*/
+
+
+@media only screen and (max-width: 480px) {
+
+    .login {
+        top: 40%;
+        left: 48%;
+        width: 50%;
+
+    }
+
+    .fa-user-circle {
+        left: 28%;
+    }
+
+    .footer {
+        top: 88%;
+        left: 27%;
+    }
+}
