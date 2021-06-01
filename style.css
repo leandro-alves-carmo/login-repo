@@ -57,15 +57,17 @@ a:hover {
 
 .login input[type="submit"] {
     cursor: pointer;
+    height: 40px;
     color: #fff;
     background: var(--charcoal);
     font-size: 20px;
     border-radius: 50px;
+    border: none;
 }
 
 .login input[type="submit"]:hover {
-    color: #fff;
     background: var(--orange);
+
 }
 /*------------
 ---- Footer ----
